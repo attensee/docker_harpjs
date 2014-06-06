@@ -6,4 +6,6 @@ VOLUME ["/input", "/output"]
 
 WORKDIR /input
 
-CMD harp compile /input/ /output/
+ENTRYPOINT ["harp"]
+
+CMD ["--help"]
